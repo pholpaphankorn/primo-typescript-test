@@ -3,6 +3,7 @@
   "packageManager": "yarn@4.12.0",
   "scripts": {
     "test": "jest",
+    "test:cov": "jest --coverage",
     "build": "tsc",
     "start": "node dist/src/index.js",
     "dev": "npm run build && npm start",
