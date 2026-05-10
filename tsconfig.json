@@ -7,22 +7,16 @@
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
-    
+
     /* FIXES START HERE */
-    "isolatedModules": true,        // Resolves TS151002 warning
-    "types": ["jest", "node"],      // Resolves "Cannot find name 'describe'"
+    "isolatedModules": true, // Resolves TS151002 warning
+    "types": ["jest", "node"], // Resolves "Cannot find name 'describe'"
     /* FIXES END HERE */
 
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src/**/*", 
-    "test/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

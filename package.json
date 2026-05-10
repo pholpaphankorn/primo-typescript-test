@@ -5,12 +5,15 @@
     "test": "jest",
     "build": "tsc",
     "start": "node dist/src/index.js",
-    "dev": "npm run build && npm start"
+    "dev": "npm run build && npm start",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^25.6.2",
     "jest": "^30.4.2",
+    "prettier": "3.8.3",
     "ts-jest": "^29.4.9",
     "typescript": "^6.0.3"
   }

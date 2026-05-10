@@ -1,11 +1,10 @@
 import { merge } from '../src/merge';
 
 describe('merge function - Edge Cases', () => {
-  
   test('Standard case: should merge three arrays into sorted ascending array', () => {
-    const collection_1 = [10, 5, 2]; 
-    const collection_2 = [1, 4, 8]; 
-    const collection_3 = [3, 6, 9]; 
+    const collection_1 = [10, 5, 2];
+    const collection_2 = [1, 4, 8];
+    const collection_3 = [3, 6, 9];
 
     const expected = [1, 2, 3, 4, 5, 6, 8, 9, 10];
     expect(merge(collection_1, collection_2, collection_3)).toEqual(expected);
@@ -19,8 +18,8 @@ describe('merge function - Edge Cases', () => {
 
   test('Negative numbers: should correctly sort negative integers', () => {
     const collection_1 = [0, -5, -10]; // Max to Min
-    const collection_2 = [-8, -2, 1];   // Min to Max
-    const collection_3 = [-3, 4, 7];    // Min to Max
+    const collection_2 = [-8, -2, 1]; // Min to Max
+    const collection_3 = [-3, 4, 7]; // Min to Max
 
     const expected = [-10, -8, -5, -3, -2, 0, 1, 4, 7];
     expect(merge(collection_1, collection_2, collection_3)).toEqual(expected);

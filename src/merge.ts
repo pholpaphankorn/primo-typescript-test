@@ -4,12 +4,11 @@ export function merge(
   collection_3: number[]
 ): number[] {
   const result: number[] = [];
-  
-  
+
   // Pointers
   let i = collection_1.length - 1; // collection_1 is Max-to-Min, so start from end
-  let j = 0;                       // collection_2 is Min-to-Max
-  let k = 0;                       // collection_3 is Min-to-Max
+  let j = 0; // collection_2 is Min-to-Max
+  let k = 0; // collection_3 is Min-to-Max
 
   while (i >= 0 || j < collection_2.length || k < collection_3.length) {
     const v1 = i >= 0 ? collection_1[i] : Infinity;
